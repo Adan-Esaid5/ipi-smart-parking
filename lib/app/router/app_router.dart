@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import '../auth/login_screen.dart';
 import '../auth/signup_screen.dart';
 import '../home/home_screen.dart';
-import '../splash/splash_screen.dart';
+import '../begin/begin_screen.dart';
 
 import '../gps/gps_screen.dart';
 import '../parking/parking_lots_screen.dart';
@@ -21,9 +21,9 @@ import '../admin/admin_screen.dart';
 
 class AppRouter {
   static final router = GoRouter(
-    initialLocation: '/splash',
+    initialLocation: '/begin',
     routes: [
-      GoRoute(path: '/splash', builder: (c, s) => const SplashScreen()),
+      GoRoute(path: '/begin', builder: (c, s) => const BeginScreen()),
       GoRoute(path: '/login', builder: (c, s) => const LoginScreen()),
       GoRoute(path: '/signup', builder: (c, s) => const SignupScreen()),
 
